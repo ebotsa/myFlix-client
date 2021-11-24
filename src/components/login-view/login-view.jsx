@@ -31,12 +31,10 @@ import React, { useState } from 'react';
 	    );
 	}
 	
-
-	LoginView.propTypes = {
-	    movie: PropTypes.shape({
-	        Title: PropTypes.string.isRequired,
-	        Description: PropTypes.string.isRequired,
-	        ImagePath: PropTypes.string.isRequired
-	    }).isRequired,
-	    onMovieClick: PropTypes.func.isRequired
-	};
+LoginView.propTypes = {
+    user: PropTypes.shape({
+        username: PropTypes.string.isRequired,
+        password: PropTypes.string.isRequired
+    }),
+    onLoggedIn: PropTypes.func.isRequired
+};
